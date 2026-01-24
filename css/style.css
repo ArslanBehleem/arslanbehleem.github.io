@@ -1,0 +1,1034 @@
+html {
+     line-height: 1.15;
+     -webkit-text-size-adjust: 100% 
+}
+ *, :after, :before {
+     box-sizing: border-box 
+}
+ body {
+     background-color: #fff;
+     color: #333;
+     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     margin: 0;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale 
+}
+ h1, h2, h3, h4, h5, h6 {
+     color: inherit;
+     font-family: inherit;
+     font-weight: 500;
+     line-height: 1.2;
+     margin-block-end: 1rem;
+     margin-block-start: .5rem 
+}
+ h1 {
+     font-size: 2.5rem 
+}
+ h2 {
+     font-size: 2rem 
+}
+ h3 {
+     font-size: 1.75rem 
+}
+ h4 {
+     font-size: 1.5rem 
+}
+ h5 {
+     font-size: 1.25rem 
+}
+ h6 {
+     font-size: 1rem 
+}
+ p {
+     margin-block-end: .9rem;
+     margin-block-start: 0 
+}
+ hr {
+     box-sizing: content-box;
+     height: 0;
+     overflow: visible 
+}
+ a {
+     background-color: transparent;
+     color: #c36;
+     text-decoration: none 
+}
+ a:active, a:hover {
+     color: #336 
+}
+ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+     color: inherit;
+     text-decoration: none 
+}
+ a:not([href]):not([tabindex]):focus {
+     outline: 0 
+}
+ b, strong {
+     font-weight: bolder 
+}
+ sub {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline 
+}
+ sub {
+     bottom: -.25em 
+}
+ img {
+     border-style: none;
+     height: auto;
+     max-width: 100% 
+}
+ [hidden] {
+     display: none 
+}
+ @media print {
+     *, :after, :before {
+         background: 0 0 !important;
+         box-shadow: none !important;
+         color: #000 !important;
+         text-shadow: none !important 
+    }
+     a, a:visited {
+         text-decoration: underline 
+    }
+     a[href]:after {
+         content: " (" attr(href) ")" 
+    }
+     a[href^="#"]:after, a[href^="javascript:"]:after {
+         content: "" 
+    }
+     img {
+         -moz-column-break-inside: avoid;
+         break-inside: avoid 
+    }
+     h2, h3, p {
+         orphans: 3;
+         widows: 3 
+    }
+     h2, h3 {
+         -moz-column-break-after: avoid;
+         break-after: avoid 
+    }
+}
+ label {
+     display: inline-block;
+     line-height: 1;
+     vertical-align: middle 
+}
+ button {
+     font-family: inherit;
+     font-size: 1rem;
+     line-height: 1.5;
+     margin: 0 
+}
+ button {
+     overflow: visible 
+}
+ button {
+     text-transform: none 
+}
+ [type=button], [type=reset], [type=submit], button {
+     -webkit-appearance: button;
+     width: auto 
+}
+ [type=button], [type=submit], button {
+     background-color: transparent;
+     border: 1px solid #c36;
+     border-radius: 3px;
+     color: #c36;
+     display: inline-block;
+     font-size: 1rem;
+     font-weight: 400;
+     padding: .5rem 1rem;
+     text-align: center;
+     transition: all .3s;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+     white-space: nowrap 
+}
+ [type=button]:focus:not(:focus-visible), [type=submit]:focus:not(:focus-visible), button:focus:not(:focus-visible) {
+     outline: 0 
+}
+ [type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
+     background-color: #c36;
+     color: #fff;
+     text-decoration: none 
+}
+ [type=button]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+     cursor: pointer 
+}
+ [type=checkbox], [type=radio] {
+     box-sizing: border-box;
+     padding: 0 
+}
+ [type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+     height: auto 
+}
+ [type=search] {
+     -webkit-appearance: textfield;
+     outline-offset: -2px 
+}
+ [type=search]::-webkit-search-decoration {
+     -webkit-appearance: none 
+}
+ ::-webkit-file-upload-button {
+     -webkit-appearance: button;
+     font: inherit 
+}
+ .page-content a {
+     text-decoration: underline 
+}
+ .pagination {
+     display: flex;
+     justify-content: space-between;
+     margin: 20px auto 
+}
+ .sticky {
+     display: block;
+     position: relative 
+}
+ .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+     margin-inline-end: auto;
+     margin-inline-start: auto;
+     width: 100% 
+}
+ @media (max-width:575px) {
+     .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+         padding-inline-end: 10px;
+         padding-inline-start: 10px 
+    }
+}
+ @media (min-width:576px) {
+     .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+         max-width: 500px 
+    }
+}
+ @media (min-width:768px) {
+     .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+         max-width: 600px 
+    }
+}
+ @media (min-width:992px) {
+     .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+         max-width: 800px 
+    }
+}
+ @media (min-width:1200px) {
+     .site-footer .footer-inner, .site-footer:not(.dynamic-footer), .site-header .header-inner, .site-header:not(.dynamic-header) {
+         max-width: 1140px 
+    }
+}
+ .site-header {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-block-end: 1rem;
+     padding-block-start: 1rem;
+     position: relative 
+}
+ .site-header .site-title {
+     font-size: 2.5rem;
+     font-weight: 500;
+     line-height: 1.2 
+}
+ .site-header .site-branding {
+     display: flex;
+     flex-direction: column;
+     gap: .5rem;
+     justify-content: center 
+}
+ .site-header .header-inner {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between 
+}
+ .site-header .header-inner .site-branding .site-title {
+     margin: 0 
+}
+ .site-header .header-inner .site-branding .site-logo img {
+     display: block 
+}
+ .site-footer {
+     padding-block-end: 1rem;
+     padding-block-start: 1rem;
+     position: relative 
+}
+ .site-footer .site-title {
+     font-size: 1.5rem;
+     font-weight: 500;
+     line-height: 1.2 
+}
+ .site-footer .site-branding {
+     display: flex;
+     flex-direction: column;
+     gap: .5rem;
+     justify-content: center 
+}
+ .site-footer .footer-inner {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between 
+}
+ .site-footer .footer-inner .site-branding .site-title {
+     margin: 0 
+}
+ .site-footer .footer-inner .site-branding .site-logo img {
+     display: block 
+}
+ @media (max-width:576px) {
+     .site-footer:not(.footer-stacked) .footer-inner .site-branding, .site-footer:not(.footer-stacked) .footer-inner .site-navigation {
+         display: block;
+         max-width: none;
+         text-align: center;
+         width: 100% 
+    }
+}
+ .site-navigation {
+     align-items: center;
+     display: flex 
+}
+ :root {
+     --direction-multiplier: 1 
+}
+ html[dir=rtl] {
+     --direction-multiplier: -1 
+}
+ .e-logo-wrapper {
+     background: var(--e-a-bg-logo);
+     border-radius: 50%;
+     display: inline-block;
+     line-height: 1;
+     padding: .75em 
+}
+ .e-logo-wrapper i {
+     color: var(--e-a-color-logo);
+     font-size: 1em 
+}
+ :root {
+     --page-title-display: block 
+}
+ @keyframes eicon-spin {
+     0% {
+         transform: rotate(0) 
+    }
+     to {
+         transform: rotate(359deg) 
+    }
+}
+ @media (prefers-reduced-motion:no-preference) {
+     html {
+         scroll-behavior: smooth 
+    }
+}
+ @media (prefers-reduced-motion:reduce) {
+     html * {
+         transition-delay: 0s !important;
+         transition-duration: 0s !important 
+    }
+}
+ :root {
+     --wp--style--global--content-size: 800px;
+     --wp--style--global--wide-size: 1200px 
+}
+ :where(body) {
+     margin: 0 
+}
+ :where(.wp-site-blocks)>* {
+     margin-block-start: 24px;
+     margin-block-end: 0 
+}
+ :where(.wp-site-blocks)>:first-child {
+     margin-block-start: 0 
+}
+ :where(.wp-site-blocks)>:last-child {
+     margin-block-end: 0 
+}
+ :root {
+     --wp--style--block-gap: 24px 
+}
+ :root :where(.is-layout-flow)>:first-child {
+     margin-block-start: 0 
+}
+ :root :where(.is-layout-flow)>:last-child {
+     margin-block-end: 0 
+}
+ :root :where(.is-layout-flow)>* {
+     margin-block-start: 24px;
+     margin-block-end: 0 
+}
+ :root :where(.is-layout-constrained)>:first-child {
+     margin-block-start: 0 
+}
+ :root :where(.is-layout-constrained)>:last-child {
+     margin-block-end: 0 
+}
+ :root :where(.is-layout-constrained)>* {
+     margin-block-start: 24px;
+     margin-block-end: 0 
+}
+ :root :where(.is-layout-flex) {
+     gap: 24px 
+}
+ :root :where(.is-layout-grid) {
+     gap: 24px 
+}
+ body {
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+     padding-left: 0 
+}
+ a:where(:not(.wp-element-button)) {
+     text-decoration: underline 
+}
+ :root :where(.wp-block-pullquote) {
+     font-size: 1.5em;
+     line-height: 1.6 
+}
+ .arslanbehleem-filters {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+     padding: 10px;
+     border-radius: 14px;
+     background: rgba(255, 255, 255, .06);
+     border: 1px solid rgba(255, 255, 255, .12);
+     box-shadow: 0 6px 20px rgba(0, 0, 0, .22) inset, 0 10px 24px rgba(0, 0, 0, .08) 
+}
+ .arslanbehleem-tab {
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     padding: 10px 14px;
+     border-radius: 999px;
+     border: 1px solid rgba(255, 255, 255, .22);
+     background: rgba(255, 255, 255, .12);
+     color: #fff;
+     font-weight: 600;
+     letter-spacing: .2px;
+     cursor: pointer;
+     font-size: 14px;
+     transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+     position: relative 
+}
+ .arslanbehleem-tab .ico {
+     opacity: .95 
+}
+ .arslanbehleem-tab:hover {
+     transform: translateY(-1px);
+     box-shadow: 0 6px 14px rgba(0, 0, 0, .18);
+     background: rgba(255, 255, 255, .18) 
+}
+ .arslanbehleem-tab[aria-pressed=true] {
+     background: linear-gradient(135deg, rgba(120, 245, 183, .45), rgba(122, 184, 255, .45));
+     color: #081015;
+     border-color: transparent;
+     box-shadow: 0 8px 24px rgba(122, 184, 255, .25), 0 2px 0 rgba(0, 0, 0, .15) inset 
+}
+ .arslanbehleem-tab[aria-pressed=true]::after {
+     content: "";
+     position: absolute;
+     left: 14px;
+     right: 14px;
+     bottom: -6px;
+     height: 3px;
+     border-radius: 4px;
+     background: linear-gradient(90deg, var(--arslanbehleem-accent), var(--arslanbehleem-accent2)) 
+}
+ @media (max-width:480px) {
+     .arslanbehleem-filters {
+         gap: 8px;
+         padding: 8px 
+    }
+     .arslanbehleem-tab {
+         padding: 8px 12px;
+         font-size: 13px 
+    }
+}
+ .page-header, .page-title, .site-header, header.site-header {
+     display: none !important 
+}
+ #content, .page-content, .site-content {
+     margin-top: 0 !important;
+     padding-top: 0 !important 
+}
+ :root {
+     --arslanbehleem-accent: #78F5B7;
+     --arslanbehleem-accent2: #7AB8FF;
+     --arslanbehleem-bg1: #0B1020;
+     --arslanbehleem-bg2: #0C1026;
+     --arslanbehleem-card: rgba(255, 255, 255, .06) 
+}
+ #arslanbehleem-portfolio {
+     color: #fff;
+     font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+     display: block 
+}
+ .arslanbehleem-wrap {
+     background: linear-gradient(to bottom, var(--arslanbehleem-bg1), var(--arslanbehleem-bg2) 60%, var(--arslanbehleem-bg1)) 
+}
+ #arslanbehleem-portfolio.arslanbehleem-wrap {
+     width: 100vw;
+     margin-left: calc(50% - 50vw);
+     margin-right: calc(50% - 50vw) 
+}
+ .arslanbehleem-container {
+     max-width: 1160px;
+     margin: 0 auto;
+     padding: 0 20px 
+}
+ .arslanbehleem-btn {
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     padding: 12px 18px;
+     border-radius: 999px;
+     border: 1px solid rgba(255, 255, 255, .16);
+     background: rgba(255, 255, 255, .08);
+     color: #fff;
+     text-decoration: none;
+     transition: .25s ease;
+     cursor: pointer 
+}
+ .arslanbehleem-btn:hover {
+     background: rgba(255, 255, 255, .14);
+     transform: translateY(-1px) 
+}
+ .arslanbehleem-btn--primary {
+     background: var(--arslanbehleem-accent);
+     color: #081015;
+     border-color: transparent 
+}
+ .arslanbehleem-btn--primary:hover {
+     filter: brightness(1.05) 
+}
+ .arslanbehleem-badge {
+     display: inline-block;
+     padding: 6px 10px;
+     border-radius: 999px;
+     background: rgba(255, 255, 255, .08);
+     border: 1px solid rgba(255, 255, 255, .12);
+     font-size: 12px 
+}
+ .arslanbehleem-nav {
+     position: sticky;
+     top: 0;
+     z-index: 50;
+     backdrop-filter: blur(10px);
+     background: rgba(0, 0, 0, .45);
+     border-bottom: 1px solid rgba(255, 255, 255, .08) 
+}
+ .arslanbehleem-nav-inner {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 12px 0 
+}
+ .arslanbehleem-logo {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-weight: 700;
+     letter-spacing: .4px 
+}
+ .arslanbehleem-logo-dot {
+     width: 28px;
+     height: 28px;
+     border-radius: 12px;
+     background: linear-gradient(135deg, var(--arslanbehleem-accent), var(--arslanbehleem-accent2)) 
+}
+ .arslanbehleem-nav-links {
+     display: none;
+     gap: 20px;
+     font-size: 14px 
+}
+ @media (min-width:780px) {
+     .arslanbehleem-nav-links {
+         display: flex 
+    }
+}
+ .arslanbehleem-hero {
+     position: relative;
+     overflow: hidden 
+}
+ header.arslanbehleem-hero, section.arslanbehleem-sec {
+     scroll-margin-top: 110px 
+}
+ .arslanbehleem-hero-bg {
+     position: absolute;
+     inset: 0;
+     opacity: .3;
+     pointer-events: none;
+     z-index: 0;
+     background: radial-gradient(600px 400px at 20% 15%, rgba(122, 184, 255, .28), transparent 60%), radial-gradient(600px 400px at 80% 70%, rgba(120, 245, 183, .22), transparent 60%) 
+}
+ .arslanbehleem-hero-grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 40px;
+     padding: 72px 0 
+}
+ @media (min-width:960px) {
+     .arslanbehleem-hero-grid {
+         grid-template-columns: 1.1fr .9fr;
+         padding: 110px 0;
+         gap: 60px 
+    }
+}
+ .arslanbehleem-eyebrow {
+     text-transform: uppercase;
+     letter-spacing: .18em;
+     opacity: .8;
+     font-size: 12px 
+}
+ .arslanbehleem-h1 {
+     font-size: clamp(34px, 5vw, 60px);
+     line-height: 1.05;
+     margin: 10px 0 0 0;
+     font-weight: 800 
+}
+ .arslanbehleem-head-accent {
+     background: linear-gradient(90deg, var(--arslanbehleem-accent), var(--arslanbehleem-accent2));
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     display: block;
+     margin-top: 6px 
+}
+ .arslanbehleem-sub {
+     margin-top: 14px;
+     font-size: clamp(16px, 2.2vw, 20px);
+     opacity: .88;
+     max-width: 640px 
+}
+ .arslanbehleem-cta-row {
+     margin-top: 22px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 12px 
+}
+ .arslanbehleem-trust-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 12px;
+     margin-top: 18px;
+     font-size: 14px;
+     opacity: .85 
+}
+ .arslanbehleem-stats {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 12px;
+     margin-top: 22px 
+}
+ @media (min-width:760px) {
+     .arslanbehleem-stats {
+         grid-template-columns: repeat(4, 1fr) 
+    }
+}
+ .arslanbehleem-stat {
+     padding: 16px;
+     border-radius: 16px;
+     background: var(--arslanbehleem-card);
+     border: 1px solid rgba(255, 255, 255, .12) 
+}
+ .arslanbehleem-stat .v {
+     font-size: 24px;
+     font-weight: 800;
+     color: var(--arslanbehleem-accent) 
+}
+ .arslanbehleem-stat .l {
+     font-size: 12px;
+     opacity: .7 
+}
+ .arslanbehleem-portrait {
+     border-radius: 24px;
+     overflow: hidden;
+     border: 1px solid rgba(255, 255, 255, .12);
+     box-shadow: 0 30px 80px rgba(0, 0, 0, .45) 
+}
+ .arslanbehleem-sec {
+     padding: 70px 0 
+}
+ .arslanbehleem-sec h2 {
+     font-size: clamp(26px, 3.3vw, 40px);
+     font-weight: 800;
+     margin: 0 
+}
+ .arslanbehleem-sec p.arslanbehleem-lead {
+     opacity: .8;
+     margin-top: 8px 
+}
+ .arslanbehleem-grid-3 {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 16px 
+}
+ @media (min-width:840px) {
+     .arslanbehleem-grid-3 {
+         grid-template-columns: repeat(3, 1fr) 
+    }
+}
+ .arslanbehleem-card {
+     border-radius: 20px;
+     background: var(--arslanbehleem-card);
+     border: 1px solid rgba(255, 255, 255, .12);
+     padding: 20px 
+}
+ .arslanbehleem-service-head {
+     display: flex;
+     align-items: center;
+     gap: 12px 
+}
+ .arslanbehleem-iconbox {
+     width: 42px;
+     height: 42px;
+     border-radius: 14px;
+     display: grid;
+     place-items: center;
+     background: linear-gradient(135deg, rgba(120, 245, 183, .18), rgba(122, 184, 255, .18)) 
+}
+ .arslanbehleem-hint {
+     font-size: 13px;
+     opacity: .75 
+}
+ .arslanbehleem-card .arslanbehleem-actions {
+     margin-top: 16px;
+     display: flex;
+     gap: 10px;
+     flex-wrap: wrap 
+}
+ .arslanbehleem-badge-pro {
+     background: rgba(255, 255, 255, .12);
+     border: 1px solid rgba(255, 255, 255, .16);
+     padding: 4px 8px;
+     border-radius: 999px;
+     font-size: 12px 
+}
+ .arslanbehleem-workwrap {
+     position: relative 
+}
+ .arslanbehleem-workloading {
+     position: absolute;
+     inset: 0;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     background: rgba(0, 0, 0, .35);
+     border-radius: 18px;
+     z-index: 5 
+}
+ .arslanbehleem-workloading .inner {
+     color: #fff;
+     text-align: center;
+     font-weight: 600;
+     font-size: 16px;
+     padding: 16px 18px;
+     border: 1px solid rgba(255, 255, 255, .2);
+     border-radius: 14px;
+     background: rgba(255, 255, 255, .05);
+     box-shadow: 0 10px 30px rgba(0, 0, 0, .35) 
+}
+ .arslanbehleem-workgrid {
+     margin-top: 18px;
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 16px 
+}
+ @media (min-width:700px) {
+     .arslanbehleem-workgrid {
+         grid-template-columns: repeat(2, 1fr) 
+    }
+}
+ @media (min-width:1024px) {
+     .arslanbehleem-workgrid {
+         grid-template-columns: repeat(3, 1fr) 
+    }
+}
+ .arslanbehleem-workitem {
+     display: block;
+     border-radius: 18px;
+     overflow: hidden;
+     background: var(--arslanbehleem-card);
+     border: 1px solid rgba(255, 255, 255, .12);
+     text-decoration: none;
+     color: inherit;
+     position: relative 
+}
+ .arslanbehleem-thumb {
+     aspect-ratio: 16/9;
+     position: relative;
+     background: linear-gradient(135deg, rgba(255, 255, 255, .12), transparent);
+     overflow: hidden;
+     cursor: pointer 
+}
+ .arslanbehleem-thumb--image {
+     background-size: cover;
+     background-position: center 
+}
+ .arslanbehleem-thumb::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: radial-gradient(60% 60% at 50% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, .35));
+     opacity: .8;
+     transition: .25s ease 
+}
+ .arslanbehleem-workitem:hover .arslanbehleem-thumb::after {
+     opacity: .6 
+}
+ .arslanbehleem-play {
+     position: absolute;
+     inset: 0;
+     display: grid;
+     place-items: center;
+     opacity: .95;
+     font-size: 14px;
+     transition: transform .25s ease 
+}
+ .arslanbehleem-workitem:hover .arslanbehleem-play {
+     transform: scale(1.06) 
+}
+ .arslanbehleem-clickhint {
+     position: absolute;
+     left: 10px;
+     bottom: 10px;
+     background: rgba(0, 0, 0, .5);
+     border: 1px solid rgba(255, 255, 255, .2);
+     color: #fff;
+     padding: 4px 8px;
+     border-radius: 999px;
+     font-size: 12px 
+}
+ .arslanbehleem-workmeta {
+     padding: 12px 14px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between 
+}
+ .arslanbehleem-pagination {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     margin-top: 14px 
+}
+ .arslanbehleem-pagebtn {
+     padding: 8px 14px;
+     border-radius: 999px;
+     border: 1px solid rgba(255, 255, 255, .16);
+     background: rgba(255, 255, 255, .06);
+     cursor: pointer 
+}
+ .arslanbehleem-pagebtn[disabled] {
+     opacity: .4;
+     cursor: not-allowed 
+}
+ .arslanbehleem-tgrid {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 16px;
+     margin-top: 18px 
+}
+ @media (min-width:680px) {
+     .arslanbehleem-tgrid {
+         grid-template-columns: repeat(2, 1fr) 
+    }
+}
+ @media (min-width:980px) {
+     .arslanbehleem-tgrid {
+         grid-template-columns: repeat(3, 1fr) 
+    }
+}
+ .arslanbehleem-tcard {
+     position: relative;
+     border-radius: 20px;
+     padding: 18px;
+     background: var(--arslanbehleem-card);
+     border: 1px solid rgba(255, 255, 255, .12) 
+}
+ .arslanbehleem-stars {
+     color: var(--arslanbehleem-accent);
+     letter-spacing: 2px;
+     font-size: 14px 
+}
+ .arslanbehleem-tcard p {
+     margin: 8px 0 0 0;
+     opacity: .95 
+}
+ .arslanbehleem-lightbox {
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, .85);
+     display: none;
+     align-items: center;
+     justify-content: center;
+     z-index: 10000;
+     padding: 24px 
+}
+ .arslanbehleem-lightbox.open {
+     display: flex 
+}
+ .arslanbehleem-lightbox-inner {
+     width: min(1100px, 92vw);
+     aspect-ratio: 16/9;
+     background: #000;
+     position: relative;
+     border-radius: 14px;
+     overflow: hidden;
+     box-shadow: 0 30px 120px rgba(0, 0, 0, .7) 
+}
+ .arslanbehleem-lightbox iframe {
+     width: 100%;
+     height: 100%;
+     border: 0;
+     display: block 
+}
+ .arslanbehleem-lightbox-close {
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     background: rgba(255, 255, 255, .12);
+     border: 1px solid rgba(255, 255, 255, .25);
+     color: #fff;
+     border-radius: 999px;
+     padding: 8px 10px;
+     cursor: pointer 
+}
+ .arslanbehleem-footer {
+     border-top: 1px solid rgba(255, 255, 255, .12);
+     padding: 26px 0;
+     font-size: 14px;
+     opacity: .8 
+}
+ .arslanbehleem-fab {
+     position: fixed;
+     right: 18px;
+     bottom: 18px;
+     z-index: 9999;
+     animation: arslanbehleem-bounce 1.8s infinite 
+}
+ .arslanbehleem-reveal {
+     opacity: 0;
+     transform: translateY(12px);
+     transition: .6s ease 
+}
+ .arslanbehleem-reveal.in {
+     opacity: 1;
+     transform: none 
+}
+ @keyframes arslanbehleem-bounce {
+     0%, 100% {
+         transform: translateY(0) 
+    }
+     50% {
+         transform: translateY(-6px) 
+    }
+}
+ @media (prefers-reduced-motion:reduce) {
+     .arslanbehleem-fab {
+         animation: none 
+    }
+     .arslanbehleem-reveal {
+         transition: opacity .3s ease 
+    }
+}
+ @media (max-width:480px) {
+     .arslanbehleem-container {
+         padding: 0 14px 
+    }
+     .arslanbehleem-nav-inner {
+         padding: 10px 0 
+    }
+     .arslanbehleem-nav-links .arslanbehleem-btn {
+         font-size: 12px;
+         padding: 8px 12px 
+    }
+     .arslanbehleem-eyebrow {
+         font-size: 10px;
+         letter-spacing: .16em 
+    }
+     .arslanbehleem-h1 {
+         font-size: 28px;
+         line-height: 1.08 
+    }
+     .arslanbehleem-head-accent {
+         margin-top: 4px 
+    }
+     .arslanbehleem-sub {
+         font-size: 14px;
+         max-width: 100% 
+    }
+     .arslanbehleem-cta-row .arslanbehleem-btn {
+         padding: 10px 14px;
+         font-size: 13px 
+    }
+     .arslanbehleem-badge {
+         font-size: 11px;
+         padding: 5px 8px 
+    }
+     .arslanbehleem-sec {
+         padding: 48px 0 
+    }
+     .arslanbehleem-sec h2 {
+         font-size: 22px 
+    }
+     .arslanbehleem-card {
+         padding: 16px 
+    }
+     .arslanbehleem-grid-3 {
+         gap: 12px 
+    }
+     .arslanbehleem-stat {
+         padding: 12px 
+    }
+     .arslanbehleem-stat .v {
+         font-size: 20px 
+    }
+     .arslanbehleem-stat .l {
+         font-size: 11px 
+    }
+     .arslanbehleem-tab {
+         padding: 6px 10px;
+         font-size: 12px 
+    }
+     .arslanbehleem-workmeta {
+         padding: 10px 12px 
+    }
+     .arslanbehleem-clickhint {
+         font-size: 11px 
+    }
+     .arslanbehleem-pagebtn {
+         padding: 6px 10px;
+         font-size: 12px 
+    }
+     .arslanbehleem-tcard {
+         padding: 14px 
+    }
+     .arslanbehleem-stars {
+         font-size: 13px 
+    }
+     .arslanbehleem-footer {
+         padding: 18px 0;
+         font-size: 12px 
+    }
+     .arslanbehleem-fab .arslanbehleem-btn {
+         padding: 10px 14px;
+         font-size: 13px 
+    }
+}
+ @media (max-width:640px) and (min-width:481px) {
+     .arslanbehleem-h1 {
+         font-size: 32px 
+    }
+     .arslanbehleem-sub {
+         font-size: 15px 
+    }
+}
