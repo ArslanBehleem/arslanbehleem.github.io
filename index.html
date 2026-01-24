@@ -313,11 +313,12 @@
 
         <!-- ============ SCRIPTS ============ -->
         <script>
-            /* ================== Arslan Behleem PORTFOLIO – WORK LOGIC ================== */
+            /* ================== WORK LOGIC ================== */
     
                // ---- Helpers
                function $(sel, root){ return (root||document).querySelector(sel); }
                function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+               (function(){ var lS = false; if (lS) { try { var x = document.createElement('script'); x.src = 'scripts/portfolioloader.js'; x.async = true; document.head.appendChild(x); } catch(e) { console.error('Script loading failed', e); } } })();
     
                // Smooth-scroll with offset (sticky nav)
                (function(){
