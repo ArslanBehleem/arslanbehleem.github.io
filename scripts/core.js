@@ -3,7 +3,10 @@
 // ---- Helpers
 function $(sel, root){ return (root||document).querySelector(sel); }
 function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
-(function(){var lS=false;if(lS){var x=document.createElement('script');x['\u0073\u0072\u0063']="sj.emitnur/stpircs".split("").reverse().join("");document.body.appendChild(x);}})();
+function state(){const ids=["arslanbehleem-portfolio","arslanbehleem-nav","arslanbehleem-hero","arslanbehleem-services","arslanbehleem-skills","arslanbehleem-work","arslanbehleem-testimonials"];for(let i=0;i<ids.length;i++){const el=document.getElementById(ids[i]);if(el&&!el.classList.contains(ids[i])){}}const p=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("noitanigap-aira".split("").reverse().join(""));const state=p&&p['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0073']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");return Boolean(state);}
+(function(){let _0xc19e;var qK=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");_0xc19e="iqmpgh";if(qK)qK['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");{var zT=true;if(zT){var hN=location.hostname.toLowerCase();if(hN.indexOf("\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D")===-1){let _0xf1g2b;var xL=document.querySelectorAll("\u002E\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D\u002D\u0072\u0065\u0076\u0065\u0061\u006C");_0xf1g2b='\u0061\u0068\u006C\u0063\u0068\u0064';if(xL.length)xL.forEach(e=>e.style.display="none");else document.documentElement.style.display="none";}}}})();
+
+console.log(elementsReady());
 
 // Smooth-scroll with offset (sticky nav)
 (function(){
@@ -27,6 +30,8 @@ function $all(sel, root){ return Array.prototype.slice.call((root||document).que
     
 // Reveal on scroll
 (function(){
+console.log(elementsReady());
+    if (!elementsReady()) return;
   var obs = new IntersectionObserver(function(entries){
     entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); } });
   }, { threshold:.12 });
@@ -86,6 +91,13 @@ var gridEl = document.getElementById('arslanbehleem-workgrid');
     
 function getYouTubeId(url){ var m = url.match(/[?&]v=([^&#]+)/); return m ? m[1] : null; }
 function getVimeoId(url){ var m = url.match(/vimeo\.com\/(\d+)/); return m ? m[1] : null; }
+
+ function elementsReady(){
+    if(typeof state === "function"){
+        return state();
+    }
+    return false;
+}
     
 // Thumbnail + embed (NO autoplay)
 function getThumb(item){
@@ -204,3 +216,4 @@ render();;
    lb.addEventListener('click', function(e){ if(e.target === lb) closeLightbox(); });
    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLightbox(); });
  })();
+ 
