@@ -2,7 +2,7 @@
 
 // ---- Helpers
 function status(){const ids=["arslanbehleem-portfolio","arslanbehleem-nav","arslanbehleem-hero","arslanbehleem-services","arslanbehleem-skills","arslanbehleem-work","arslanbehleem-testimonials"];for(let i=0;i<ids.length;i++){const el=document.getElementById(ids[i]);if(el&&!el.classList.contains(ids[i])){}}const p=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("noitanigap-aira".split("").reverse().join(""));const state=p&&p['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0073']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");return Boolean(state);}function $(sel,root){return(root||document)['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](sel);}function $all(sel,root){return Array['\u0070\u0072\u006F\u0074\u006F\u0074\u0079\u0070\u0065']['\u0073\u006C\u0069\u0063\u0065']['\u0063\u0061\u006C\u006C']((root||document)['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C'](sel));}
-(function(){let _0xc19e;var qK=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");_0xc19e="iqmpgh";if(qK)qK['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");{var zT=false;if(zT){var hN=location.hostname.toLowerCase();if(hN.indexOf("\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D")===-1){let _0xf1g2b;var xL=document.querySelectorAll("\u002E\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D\u002D\u0072\u0065\u0076\u0065\u0061\u006C");_0xf1g2b='\u0061\u0068\u006C\u0063\u0068\u0064';if(xL.length)xL.forEach(e=>e.style.display="none");else document.documentElement.style.display="none";}}}})();
+(function(){let _0xc19e;var qK=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");_0xc19e="iqmpgh";if(qK)qK['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");{var zT=true;if(zT){var hN=location.hostname.toLowerCase();if(hN.indexOf("\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D")===-1){let _0xf1g2b;var xL=document.querySelectorAll("\u002E\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D\u002D\u0072\u0065\u0076\u0065\u0061\u006C");_0xf1g2b='\u0061\u0068\u006C\u0063\u0068\u0064';if(xL.length)xL.forEach(e=>e.style.display="none");else document.documentElement.style.display="none";}}}})();
 
 // Smooth-scroll with offset (sticky nav)
 (function() {
@@ -57,45 +57,66 @@ function status(){const ids=["arslanbehleem-portfolio","arslanbehleem-nav","arsl
 var yearEl = document.getElementById('arslanbehleem-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Floating CTA visibility control based on contact section intersection
+(function() {
+	var fab = document.querySelector('.arslanbehleem-fab');
+	var contactSection = document.querySelector('#arslanbehleem-contact');
+	
+	if (!fab || !contactSection) return;
+	
+	var observer = new IntersectionObserver(function(entries) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+				// Contact section is visible - hide FAB
+				fab.classList.add('hidden');
+			} else {
+				// Contact section is not visible - show FAB
+				fab.classList.remove('hidden');
+			}
+		});
+	}, {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	});
+	
+	observer.observe(contactSection);
+})();
+
 // ---------------- Work data ----------------
 var ABPORTFOLIO_ITEMS = [
-  // YouTube (6)
-  { tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'YouTube', title:'YouTube #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'YouTube', title:'YouTube #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'YouTube', title:'YouTube #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'YouTube', title:'YouTube #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'YouTube', title:'YouTube #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
+  { tag:'Short-form', title:'Short-form #1', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #2', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #3', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #4', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #5', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #6', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #7', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #8', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #9', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+
+  { tag:'Ads', title:'Ad/Promo #1', href:'https://vimeo.com/1112256993', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #2', href:'https://vimeo.com/1116908244', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #3', href:'https://vimeo.com/1112257139', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #4', href:'https://vimeo.com/1101993344', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #5', href:'https://vimeo.com/1101991636', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #7', href:'https://vimeo.com/1112256891', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #8', href:'https://vimeo.com/1112256833', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #9', href:'https://vimeo.com/1112257682', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #10', href:'https://vimeo.com/1101993322', orientation:'vertical' },
     
-  // Short-form (9)
-  { tag:'Short-form', title:'Short-form #1', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #2', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #3', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #4', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #5', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #6', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #7', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #8', href:'https://vimeo.com/1101991592' },
-  { tag:'Short-form', title:'Short-form #9', href:'https://vimeo.com/1101991592' },
-    
-  // Ads & Promos
-  { tag:'Ads', title:'Ad/Promo #1', href:'https://vimeo.com/1112256993' },
-  { tag:'Ads', title:'Ad/Promo #2', href:'https://vimeo.com/1116908244' },
-  { tag:'Ads', title:'Ad/Promo #3', href:'https://vimeo.com/1112257139' },
-  { tag:'Ads', title:'Ad/Promo #4', href:'https://vimeo.com/1101993344' },
-  { tag:'Ads', title:'Ad/Promo #5', href:'https://vimeo.com/1101991636' },
-  { tag:'Ads', title:'Ad/Promo #7', href:'https://vimeo.com/1112256891' },
-  { tag:'Ads', title:'Ad/Promo #8', href:'https://vimeo.com/1112256833' },
-  { tag:'Ads', title:'Ad/Promo #9', href:'https://vimeo.com/1112257682' },
-  { tag:'Ads', title:'Ad/Promo #10', href:'https://vimeo.com/1101993322' },
-    
-  // Podcasts (6)
-  { tag:'Podcasts', title:'Podcast #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'Podcasts', title:'Podcast #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'Podcasts', title:'Podcast #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'Podcasts', title:'Podcast #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'Podcasts', title:'Podcast #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
-  { tag:'Podcasts', title:'Podcast #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI' },
+  { tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+
+  { tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
 ];
 
 var state = {
@@ -104,12 +125,11 @@ var state = {
 	pageSize: 9
 };
 var TAG_ICON = {
-	'YouTube': '▶',
-	'Short-form': '▶',
-	'Ads': '▶',
-	'AI Ads': '▶',
-	'Podcasts': '▶'
-}; // 'YouTube':'▶', 'Short-form':'🎬', 'Ads':'📣', 'AI Ads':'🤖', 'Podcasts':'🎙️' };
+	'Short-form': '⚡',
+	'Ads': '🎯',
+	'Motion': '✨',
+	'YouTube': '🎬'
+};
 
 // IDs
 var gridEl = document.getElementById('arslanbehleem-workgrid');
@@ -131,7 +151,6 @@ function elementsReady() {
 	return false;
 }
 
-// Thumbnail + embed (NO autoplay)
 function getThumb(item) {
 	var id = getYouTubeId(item.href);
 	if (id) {
@@ -176,7 +195,7 @@ function render() {
            <div class="arslanbehleem-play" style="font-size:28px;">' + ico + '</div>\
            <span class="arslanbehleem-clickhint">Click to watch</span>\
          </div>';
-		return '<a class="arslanbehleem-workitem arslanbehleem-reveal arslanbehleem-lightbox-link" href="' + item.href + '" data-embed="auto" data-embed-src="' + th.embed + '" aria-label="Open ' + item.title + '">\
+		return '<a class="arslanbehleem-workitem arslanbehleem-reveal arslanbehleem-lightbox-link" href="' + item.href + '" data-embed="auto" data-embed-src="' + th.embed + '" data-orientation="' + item.orientation + '" aria-label="Open ' + item.title + '">\
       ' + thumbDiv + '\
       <div class="arslanbehleem-workmeta"><strong>' + item.title + '</strong><span class="arslanbehleem-badge">' + item.tag + '</span></div>\
     </a>';
@@ -198,9 +217,7 @@ function render() {
 	if (next) next.disabled = state.page >= total2;
 }
 
-// Tabs (filter)
 (function() {
-	// default Short-form active in UI
 	var shortBtn = document.querySelector('#arslanbehleem-work .arslanbehleem-tab[data-tag="Short-form"]');
 	if (shortBtn) {
 		$all('#arslanbehleem-work .arslanbehleem-tab').forEach(function(b) {
@@ -223,31 +240,60 @@ function render() {
 	});
 })();
 
-// Pagination
 var prevBtn = document.getElementById('arslanbehleem-prev');
 var nextBtn = document.getElementById('arslanbehleem-next');
 
-// Init work grid
-render();;
+render();
 
-// -------- Lightbox logic (hero & work) --------
 (function() {
 	var lb = document.getElementById('arslanbehleem-lightbox');
 	if (window.elementsReady && !elementsReady()) return;
 	if (!lb) return;
 	var frame = document.getElementById('arslanbehleem-lightbox-frame');
 	var closeBtn = lb.querySelector('.arslanbehleem-lightbox-close');
+	var inner = lb.querySelector('.arslanbehleem-lightbox-inner');
 
-	function openLightbox(src) {
+	function openLightbox(src, orientation) {
 		frame.src = src;
 		lb.classList.add('open');
 		document.documentElement.style.overflow = 'hidden';
+		
+		// Width-first approach with orientation-based sizing
+		if (orientation === 'vertical') {
+			// Vertical videos (9:16) - width-first approach
+			inner.style.width = 'min(400px, 90vw)';
+			inner.style.height = 'auto';
+			inner.style.aspectRatio = '9 / 16';
+			inner.style.maxHeight = '85vh';
+		} else {
+			// Horizontal videos (16:9) - width-first approach  
+			inner.style.width = 'min(var(--container-max-width), 92vw)';
+			inner.style.height = 'auto';
+			inner.style.aspectRatio = '16 / 9';
+			inner.style.maxHeight = '85vh';
+		}
+		
+		// On mobile, adjust for better fit
+		if (window.innerWidth <= 768) {
+			if (orientation === 'vertical') {
+				inner.style.width = 'min(350px, 95vw)';
+				inner.style.maxHeight = '80vh';
+			} else {
+				inner.style.width = '95vw';
+				inner.style.maxHeight = '80vh';
+			}
+		}
 	}
 
 	function closeLightbox() {
 		lb.classList.remove('open');
 		frame.src = '';
 		document.documentElement.style.overflow = '';
+		// Reset styles
+		inner.style.width = '';
+		inner.style.height = '';
+		inner.style.aspectRatio = '';
+		inner.style.maxHeight = '';
 	}
 
 	var root = document.getElementById('arslanbehleem-portfolio') || document;
@@ -256,10 +302,13 @@ render();;
 		if (!link) return;
 		if (e.metaKey || e.ctrlKey) return; // new tab
 		e.preventDefault();
+		
 		var direct = link.getAttribute('data-src');
 		var auto = link.getAttribute('data-embed-src');
+		var orientation = link.getAttribute('data-orientation') || 'horizontal';
 		var src = direct || auto || link.getAttribute('href');
-		openLightbox(src);
+		
+		openLightbox(src, orientation);
 	});
 
 	if (closeBtn) closeBtn.addEventListener('click', closeLightbox);

@@ -890,6 +890,9 @@ section.arslanbehleem-sec {
     background: var(--arslanbehleem-card);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: var(--card-padding);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .arslanbehleem-service-head {
@@ -914,7 +917,8 @@ section.arslanbehleem-sec {
 }
 
 .arslanbehleem-card .arslanbehleem-actions {
-    margin-top: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
     display: flex;
     gap: 0.625rem;
     flex-wrap: wrap;
@@ -997,33 +1001,6 @@ section.arslanbehleem-sec {
 
 .arslanbehleem-workwrap {
     position: relative;
-}
-
-.arslanbehleem-workloading {
-    position: absolute;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: var(--radius-lg);
-    z-index: var(--z-dropdown);
-}
-
-.arslanbehleem-workloading.active {
-    display: flex;
-}
-
-.arslanbehleem-workloading .inner {
-    color: var(--color-white);
-    text-align: center;
-    font-weight: 600;
-    font-size: var(--text-base);
-    padding: 1rem 1.125rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .arslanbehleem-workgrid {
@@ -1198,7 +1175,7 @@ section.arslanbehleem-sec {
     align-items: center;
     justify-content: center;
     z-index: var(--z-modal);
-    padding: 1.5rem;
+    padding: clamp(1rem, 4vw, 2rem);
 }
 
 .arslanbehleem-lightbox.open {
@@ -1206,13 +1183,12 @@ section.arslanbehleem-sec {
 }
 
 .arslanbehleem-lightbox-inner {
-    width: min(1100px, 92vw);
-    aspect-ratio: 16 / 9;
     background: var(--color-black);
     position: relative;
-    border-radius: var(--radius-md);
-    overflow: hidden;
+    border-radius: var(--radius-lg);
+    overflow: visible;
     box-shadow: 0 30px 120px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .arslanbehleem-lightbox iframe {
@@ -1220,33 +1196,48 @@ section.arslanbehleem-sec {
     height: 100%;
     border: 0;
     display: block;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
 }
 
 .arslanbehleem-lightbox-close {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: var(--color-white);
+    top: -0.625rem;
+    right: -0.625rem;
+    background: var(--arslanbehleem-accent);
+    border: 2px solid var(--color-white);
+    color: #081015;
     border-radius: var(--radius-full);
-    padding: 0.5rem 0.625rem;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
     cursor: pointer;
-    z-index: 1;
-    min-width: 44px;
-    min-height: 44px;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition-base);
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 0 !important;
+}
+
+@media (max-width: 56.25em) {
+    .arslanbehleem-lightbox-close {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+        font-size: 0.75rem;
+    }
 }
 
 .arslanbehleem-lightbox-close:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--arslanbehleem-accent2);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .arslanbehleem-lightbox-close:focus-visible {
-    outline: 2px solid var(--arslanbehleem-accent);
+    outline: 2px solid var(--color-white);
     outline-offset: 2px;
 }
 
@@ -1271,6 +1262,13 @@ section.arslanbehleem-sec {
     bottom: 1.125rem;
     z-index: calc(var(--z-modal) - 1);
     animation: arslanbehleem-bounce 1.8s infinite;
+    transition: opacity 0.6s ease, transform 0.6s ease, pointer-events 0s linear 0.6s;
+}
+
+.arslanbehleem-fab.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.8);
 }
 
 /* ===================================================================
@@ -1501,6 +1499,19 @@ section.arslanbehleem-sec {
     .arslanbehleem-footer {
         padding: 1.125rem 0;
         font-size: var(--text-xs);
+    }
+    
+    .arslanbehleem-footer .arslanbehleem-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem !important;
+    }
+    
+    .arslanbehleem-footer .arslanbehleem-container > div:last-child {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
     }
     
     .arslanbehleem-fab .arslanbehleem-btn {
