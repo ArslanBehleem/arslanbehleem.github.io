@@ -84,39 +84,39 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ---------------- Work data ----------------
 var ABPORTFOLIO_ITEMS = [
-  { tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/watch?v=zT6SRGPZ8A4', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #2', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #3', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #4', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #5', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #6', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #7', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #8', href:'https://vimeo.com/1101991592', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #9', href:'https://vimeo.com/1101991592', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #7', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #8', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Short-form', title:'Short-form #9', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
 
-  { tag:'Ads', title:'Ad/Promo #1', href:'https://vimeo.com/1112256993', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #2', href:'https://vimeo.com/1116908244', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #3', href:'https://vimeo.com/1112257139', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #4', href:'https://vimeo.com/1101993344', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #5', href:'https://vimeo.com/1101991636', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #7', href:'https://vimeo.com/1112256891', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #8', href:'https://vimeo.com/1112256833', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #9', href:'https://vimeo.com/1112257682', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #10', href:'https://vimeo.com/1101993322', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #7', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #8', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Ads', title:'Ad/Promo #9', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
     
-  { tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+  { tag:'Motion', title:'Motion Graphics #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
 
-  { tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #2', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #3', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #4', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #5', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #6', href:'https://www.youtube.com/watch?v=KHRXTv7D5jI', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #2', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #3', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #4', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #5', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+  { tag:'YouTube', title:'YouTube #6', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
 ];
 
 var state = {
@@ -135,13 +135,13 @@ var TAG_ICON = {
 var gridEl = document.getElementById('arslanbehleem-workgrid');
 
 function getYouTubeId(url) {
-	var m = url.match(/[?&]v=([^&#]+)/);
-	return m ? m[1] : null;
-}
-
-function getVimeoId(url) {
-	var m = url.match(/vimeo\.com\/(\d+)/);
-	return m ? m[1] : null;
+	var watchMatch = url.match(/[?&]v=([^&#]+)/);
+	if (watchMatch) return watchMatch[1];
+	
+	var shortsMatch = url.match(/\/shorts\/([^?&#]+)/);
+	if (shortsMatch) return shortsMatch[1];
+	
+	return null;
 }
 
 function elementsReady() {
@@ -154,18 +154,12 @@ function elementsReady() {
 function getThumb(item) {
 	var id = getYouTubeId(item.href);
 	if (id) {
+		var thumbnailUrl = 'https://img.youtube.com/vi/' + id + '/maxresdefault.jpg';
 		return {
 			type: 'image',
-			url: 'https://img.youtube.com/vi/' + id + '/hqdefault.jpg',
-			embed: 'https://www.youtube.com/embed/' + id + '?rel=0&playsinline=1&modestbranding=1'
-		};
-	}
-	var vm = getVimeoId(item.href);
-	if (vm) {
-		return {
-			type: 'image',
-			url: 'https://vumbnail.com/' + vm + '.jpg',
-			embed: 'https://player.vimeo.com/video/' + vm + '?title=0&byline=0&portrait=0&playsinline=1'
+			url: thumbnailUrl,
+			fallbackUrl: 'https://img.youtube.com/vi/' + id + '/hqdefault.jpg',
+			embed: 'https://www.youtube.com/embed/' + id + '?rel=0&playsinline=1'
 		};
 	}
 	return {
@@ -187,7 +181,8 @@ function render() {
 		var ico = TAG_ICON[item.tag] || '▶';
 		var th = getThumb(item);
 		var thumbDiv = th.type === 'image' ?
-			'<div class="arslanbehleem-thumb arslanbehleem-thumb--image" style="background-image:url(' + th.url + ');">\
+			'<div class="arslanbehleem-thumb arslanbehleem-thumb--image" style="background-image:url(' + th.url + ');" ' + 
+			(th.fallbackUrl ? 'data-fallback="' + th.fallbackUrl + '"' : '') + '>\
            <div class="arslanbehleem-play" style="font-size:28px;">' + ico + '</div>\
            <span class="arslanbehleem-clickhint">Click to watch</span>\
          </div>' :
@@ -203,6 +198,30 @@ function render() {
 
 	$all('.arslanbehleem-reveal', gridEl).forEach(function(el) {
 		el.classList.add('in');
+	});
+
+	// Handle thumbnail fallbacks for failed high-quality images
+	$all('.arslanbehleem-thumb--image[data-fallback]', gridEl).forEach(function(thumb) {
+		var img = new Image();
+		var fallbackUrl = thumb.getAttribute('data-fallback');
+		
+		img.onload = function() {
+			// High quality image loaded successfully, do nothing
+		};
+		
+		img.onerror = function() {
+			// High quality image failed, use fallback
+			if (fallbackUrl) {
+				thumb.style.backgroundImage = 'url(' + fallbackUrl + ')';
+			}
+		};
+		
+		// Extract URL from background-image style
+		var bgImage = thumb.style.backgroundImage;
+		var urlMatch = bgImage.match(/url\(['"]?([^'"]+)['"]?\)/);
+		if (urlMatch && urlMatch[1]) {
+			img.src = urlMatch[1];
+		}
 	});
 
 	var list2 = ABPORTFOLIO_ITEMS.filter(function(it) {
@@ -243,6 +262,47 @@ function render() {
 var prevBtn = document.getElementById('arslanbehleem-prev');
 var nextBtn = document.getElementById('arslanbehleem-next');
 
+// Helper function to scroll to work section
+function scrollToWork() {
+	var workSection = document.querySelector('#arslanbehleem-work');
+	if (workSection) {
+		var nav = document.querySelector('#arslanbehleem-portfolio .arslanbehleem-nav');
+		var offset = (nav ? nav.offsetHeight : 0) + 10;
+		var rect = workSection.getBoundingClientRect();
+		var y = window.pageYOffset + rect.top - offset;
+		window.scrollTo({
+			top: y,
+			behavior: 'smooth'
+		});
+	}
+}
+
+// Pagination event listeners
+if (prevBtn) {
+	prevBtn.addEventListener('click', function() {
+		if (state.page > 1) {
+			state.page--;
+			render();
+			scrollToWork();
+		}
+	});
+}
+
+if (nextBtn) {
+	nextBtn.addEventListener('click', function() {
+		var list = ABPORTFOLIO_ITEMS.filter(function(it) {
+			return it.tag === state.tag;
+		});
+		var totalPages = Math.max(1, Math.ceil(list.length / state.pageSize));
+		
+		if (state.page < totalPages) {
+			state.page++;
+			render();
+			scrollToWork();
+		}
+	});
+}
+
 render();
 
 (function() {
@@ -258,15 +318,12 @@ render();
 		lb.classList.add('open');
 		document.documentElement.style.overflow = 'hidden';
 		
-		// Width-first approach with orientation-based sizing
 		if (orientation === 'vertical') {
-			// Vertical videos (9:16) - width-first approach
 			inner.style.width = 'min(400px, 90vw)';
 			inner.style.height = 'auto';
 			inner.style.aspectRatio = '9 / 16';
 			inner.style.maxHeight = '85vh';
 		} else {
-			// Horizontal videos (16:9) - width-first approach  
 			inner.style.width = 'min(var(--container-max-width), 92vw)';
 			inner.style.height = 'auto';
 			inner.style.aspectRatio = '16 / 9';
@@ -318,5 +375,4 @@ render();
 	document.addEventListener('keydown', function(e) {
 		if (e.key === 'Escape') closeLightbox();
 	});
-
 })();
