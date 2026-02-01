@@ -4,7 +4,7 @@
 function status(){const ids=["arslanbehleem-portfolio","arslanbehleem-nav","arslanbehleem-hero","arslanbehleem-services","arslanbehleem-skills","arslanbehleem-work","arslanbehleem-testimonials"];for(let i=0;i<ids.length;i++){const el=document.getElementById(ids[i]);if(el&&!el.classList.contains(ids[i])){}}const p=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("noitanigap-aira".split("").reverse().join(""));const state=p&&p['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0073']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");return Boolean(state);}function $(sel,root){return(root||document)['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](sel);}function $all(sel,root){return Array['\u0070\u0072\u006F\u0074\u006F\u0074\u0079\u0070\u0065']['\u0073\u006C\u0069\u0063\u0065']['\u0063\u0061\u006C\u006C']((root||document)['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C'](sel));}
 (function(){let _0xc19e;var qK=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");_0xc19e="iqmpgh";if(qK)qK['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0072\u0069\u0061\u002D\u0070\u0061\u0067\u0069\u006E\u0061\u0074\u0069\u006F\u006E");{var zT=true;if(zT){var hN=location.hostname.toLowerCase();if(hN.indexOf("\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D")===-1){let _0xf1g2b;var xL=document.querySelectorAll("\u002E\u0061\u0072\u0073\u006C\u0061\u006E\u0062\u0065\u0068\u006C\u0065\u0065\u006D\u002D\u0072\u0065\u0076\u0065\u0061\u006C");_0xf1g2b='\u0061\u0068\u006C\u0063\u0068\u0064';if(xL.length)xL.forEach(e=>e.style.display="none");else document.documentElement.style.display="none";}}}})();
 
-// Smooth-scroll with offset (sticky nav)
+// Smooth-scroll with offset
 (function() {
 	function abScrollTo(el) {
 		try {
@@ -53,11 +53,9 @@ function status(){const ids=["arslanbehleem-portfolio","arslanbehleem-nav","arsl
 	});
 })();
 
-// Footer year
 var yearEl = document.getElementById('arslanbehleem-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Floating CTA visibility control based on contact section intersection
 (function() {
 	var fab = document.querySelector('.arslanbehleem-fab');
 	var contactSection = document.querySelector('#arslanbehleem-contact');
@@ -67,10 +65,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 	var observer = new IntersectionObserver(function(entries) {
 		entries.forEach(function(entry) {
 			if (entry.isIntersecting) {
-				// Contact section is visible - hide FAB
 				fab.classList.add('hidden');
 			} else {
-				// Contact section is not visible - show FAB
 				fab.classList.remove('hidden');
 			}
 		});
@@ -84,39 +80,29 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ---------------- Work data ----------------
 var ABPORTFOLIO_ITEMS = [
-  { tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #7', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #8', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Short-form', title:'Short-form #9', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-
-  { tag:'Ads', title:'Ad/Promo #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #7', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #8', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Ads', title:'Ad/Promo #9', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-    
-  { tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #2', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #3', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #4', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #5', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-  { tag:'Motion', title:'Motion Graphics #6', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
-
-  { tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #2', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #3', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #4', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #5', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
-  { tag:'YouTube', title:'YouTube #6', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+	{ tag:'Short-form', title:'Showreel', href:'https://www.youtube.com/watch?v=_3AxLe3nSpY', orientation:'horizontal' },
+	{ tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/zT6SRGPZ8A4', orientation:'vertical' },
+	{ tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/zT6SRGPZ8A4', orientation:'vertical' },
+	{ tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/zT6SRGPZ8A4', orientation:'vertical' },
+	{ tag:'Short-form', title:'Short-form #1', href:'https://www.youtube.com/shorts/zT6SRGPZ8A4', orientation:'vertical' },
+	
+	{ tag:'Ads', title:'Ad/Promo #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	{ tag:'Ads', title:'Ad/Promo #2', href:'https://www.youtube.com/shorts/_6oWPU3cExA', orientation:'vertical' },
+	{ tag:'Ads', title:'Ad/Promo #3', href:'https://www.youtube.com/shorts/y4I0nt2Xzk4', orientation:'vertical' },
+	{ tag:'Ads', title:'Ad/Promo #2', href:'https://www.youtube.com/shorts/_6oWPU3cExA', orientation:'vertical' },
+	{ tag:'Ads', title:'Ad/Promo #2', href:'https://www.youtube.com/shorts/_6oWPU3cExA', orientation:'vertical' },
+	
+	{ tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	{ tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	{ tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	{ tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	{ tag:'Motion', title:'Motion Graphics #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
+	
+	{ tag:'YouTube', title:'Introduction', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+	{ tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+	{ tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+	{ tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
+	{ tag:'YouTube', title:'YouTube #1', href:'https://www.youtube.com/watch?v=XFCgR9nfL8I', orientation:'horizontal' },
 ];
 
 var state = {
@@ -124,14 +110,7 @@ var state = {
 	page: 1,
 	pageSize: 9
 };
-var TAG_ICON = {
-	'Short-form': '⚡',
-	'Ads': '🎯',
-	'Motion': '✨',
-	'YouTube': '🎬'
-};
 
-// IDs
 var gridEl = document.getElementById('arslanbehleem-workgrid');
 
 function getYouTubeId(url) {
@@ -178,16 +157,13 @@ function render() {
 	var pageItems = list.slice(start, start + state.pageSize);
 
 	gridEl.innerHTML = pageItems.map(function(item) {
-		var ico = TAG_ICON[item.tag] || '▶';
 		var th = getThumb(item);
 		var thumbDiv = th.type === 'image' ?
 			'<div class="arslanbehleem-thumb arslanbehleem-thumb--image" style="background-image:url(' + th.url + ');" ' + 
 			(th.fallbackUrl ? 'data-fallback="' + th.fallbackUrl + '"' : '') + '>\
-           <div class="arslanbehleem-play" style="font-size:28px;">' + ico + '</div>\
            <span class="arslanbehleem-clickhint">Click to watch</span>\
          </div>' :
 			'<div class="arslanbehleem-thumb" style="background: radial-gradient(500px 300px at 30% 20%, rgba(122,184,255,.25), transparent), radial-gradient(400px 260px at 80% 70%, rgba(120,245,183,.22), transparent);">\
-           <div class="arslanbehleem-play" style="font-size:28px;">' + ico + '</div>\
            <span class="arslanbehleem-clickhint">Click to watch</span>\
          </div>';
 		return '<a class="arslanbehleem-workitem arslanbehleem-reveal arslanbehleem-lightbox-link" href="' + item.href + '" data-embed="auto" data-embed-src="' + th.embed + '" data-orientation="' + item.orientation + '" aria-label="Open ' + item.title + '">\
@@ -200,23 +176,19 @@ function render() {
 		el.classList.add('in');
 	});
 
-	// Handle thumbnail fallbacks for failed high-quality images
 	$all('.arslanbehleem-thumb--image[data-fallback]', gridEl).forEach(function(thumb) {
 		var img = new Image();
 		var fallbackUrl = thumb.getAttribute('data-fallback');
 		
 		img.onload = function() {
-			// High quality image loaded successfully, do nothing
 		};
 		
 		img.onerror = function() {
-			// High quality image failed, use fallback
 			if (fallbackUrl) {
 				thumb.style.backgroundImage = 'url(' + fallbackUrl + ')';
 			}
 		};
 		
-		// Extract URL from background-image style
 		var bgImage = thumb.style.backgroundImage;
 		var urlMatch = bgImage.match(/url\(['"]?([^'"]+)['"]?\)/);
 		if (urlMatch && urlMatch[1]) {
@@ -262,7 +234,6 @@ function render() {
 var prevBtn = document.getElementById('arslanbehleem-prev');
 var nextBtn = document.getElementById('arslanbehleem-next');
 
-// Helper function to scroll to work section
 function scrollToWork() {
 	var workSection = document.querySelector('#arslanbehleem-work');
 	if (workSection) {
@@ -277,7 +248,6 @@ function scrollToWork() {
 	}
 }
 
-// Pagination event listeners
 if (prevBtn) {
 	prevBtn.addEventListener('click', function() {
 		if (state.page > 1) {
@@ -330,7 +300,6 @@ render();
 			inner.style.maxHeight = '85vh';
 		}
 		
-		// On mobile, adjust for better fit
 		if (window.innerWidth <= 768) {
 			if (orientation === 'vertical') {
 				inner.style.width = 'min(350px, 95vw)';
@@ -346,7 +315,7 @@ render();
 		lb.classList.remove('open');
 		frame.src = '';
 		document.documentElement.style.overflow = '';
-		// Reset styles
+		
 		inner.style.width = '';
 		inner.style.height = '';
 		inner.style.aspectRatio = '';
@@ -357,7 +326,7 @@ render();
 	root.addEventListener('click', function(e) {
 		var link = e.target.closest && e.target.closest('.arslanbehleem-lightbox-link');
 		if (!link) return;
-		if (e.metaKey || e.ctrlKey) return; // new tab
+		if (e.metaKey || e.ctrlKey) return;
 		e.preventDefault();
 		
 		var direct = link.getAttribute('data-src');
