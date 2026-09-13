@@ -86,8 +86,8 @@ var ABPORTFOLIO_ITEMS = [
 	{ tag:'Short-form', title:'Short-form #3', href:'https://www.youtube.com/shorts/2xK8lbvzpFg', orientation:'vertical' },
 	{ tag:'Short-form', title:'Short-form #4', href:'https://www.youtube.com/shorts/EdTlscQshlo', orientation:'vertical' },
 	{ tag:'Short-form', title:'Short-form #5', href:'https://www.youtube.com/shorts/h5RNyXS0Co8', orientation:'vertical' },
-	{ tag:'Short-form', title:'Short-form #6', href:'https://www.youtube.com/shorts/', orientation:'vertical' },
-	{ tag:'Short-form', title:'Short-form #7', href:'https://www.youtube.com/shorts/', orientation:'vertical' },
+	{ tag:'Short-form', title:'Short-form #6', href:'https://www.youtube.com/shorts/d2vdGKjyYKs', orientation:'vertical' },
+	{ tag:'Short-form', title:'Short-form #7', href:'https://www.youtube.com/shorts/13jM3seq_kA', orientation:'vertical' },
 	{ tag:'Short-form', title:'Short-form #8', href:'https://www.youtube.com/shorts/', orientation:'vertical' },
 	
 	{ tag:'Ads', title:'Ad/Promo #1', href:'https://www.youtube.com/shorts/c2bVSSn38AU', orientation:'vertical' },
